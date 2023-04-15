@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sprites</title>
+  </head>
+  <body
+    style="
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    "
+  >
+    <h3>Individual Images</h3>
+    <div style="background-color: #f5f5f5; padding: 10px">
+      <img style="padding: 5px" src="./somod_title.png" />
+      <img style="padding: 5px" src="./bookmark_icon.png" />
+      <img style="padding: 5px" src="./github_logo.png" />
+      <img style="padding: 5px" src="./npm_logo.png" />
+      <img style="padding: 5px" src="./sodaru_logo.png" />
+    </div>
+
+    <br /><br /><br />
+    <h3>Sprites</h3>
+    <div style="background-color: #f5f5f5; padding: 10px">
+      <style>
+        .bg-bookmark_icon {
+          width: 23px;
+          height: 23px;
+          background: url("./css_sprites.png") -144px -61px;
+        }
+        .bg-github_logo {
+          width: 25px;
+          height: 25px;
+          background: url("./css_sprites.png") -10px -61px;
+        }
+        .bg-npm_logo {
+          width: 25px;
+          height: 25px;
+          background: url("./css_sprites.png") -55px -61px;
+        }
+        .bg-sodaru_logo {
+          width: 24px;
+          height: 24px;
+          background: url("./css_sprites.png") -100px -61px;
+        }
+        .bg-somod_title {
+          width: 160px;
+          height: 31px;
+          background: url("./css_sprites.png") -10px -10px;
+        }
+      </style>
+      <div
+        style="display: inline-block; padding: 5px"
+        class="bg-somod_title"
+      ></div>
+      <div
+        style="display: inline-block; padding: 5px"
+        class="bg-bookmark_icon"
+      ></div>
+      <div
+        style="display: inline-block; padding: 5px"
+        class="bg-github_logo"
+      ></div>
+      <div
+        style="display: inline-block; padding: 5px"
+        class="bg-npm_logo"
+      ></div>
+      <div
+        style="display: inline-block; padding: 5px"
+        class="bg-sodaru_logo"
+      ></div>
+    </div>
+  </body>
+</html>
